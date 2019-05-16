@@ -9,17 +9,21 @@ You will need:
 * Bundler
 
 Install bundled gems:
-```bundle```
+
+`bundle`
 
 ## Tests
 
 Tests are provided by rspec and located in `spec/`. To run them:
-```bundle exec rspec```
+
+`bundle exec rspec`
 
 ## Usage
 
 Run the finder interactively by running:
-```bundle exec ruby main.rb FILE_NAME```
+
+`bundle exec ruby main.rb FILE_NAME`
+
 Replace `FILE_NAME` with the path to a valid JSON file (one has been supplied in this repo)
 
 ## Queries
@@ -32,8 +36,16 @@ The Finder 3000 supports a variety of syntaxes to query matching nodes:
 
 ### Compound Selectors
 
-Selectors may be joined together for a more specific query, e.g. `VideoModeSelect#videoMode`
+Selectors may be joined together for a more specific query, e.g.
+
+`VideoModeSelect#videoMode`
 
 ### Chained Selectors
 
-Separating selectors by a space will return child nodes of nodes matching the previous selector, e.g. `Box Input` or `Box [var=r_allow_high_dpi]`
+Separating selectors by a space will return child nodes of nodes matching the previous selector, e.g.
+
+`Box Input`
+
+or
+
+`Box [var=r_allow_high_dpi]`
